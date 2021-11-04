@@ -1,0 +1,28 @@
+#ChessBoard
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width:60em;
+    height:60em;
+    margin-top: -30em; /*set to a negative number 1/2 of your height*/
+    margin-left: -30em; /*set to a negative number 1/2 of your width*/
+    border:1em solid #454444;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#white_tile
+{
+    width:7.375em;
+    height:7.375em;
+    border:0.1em solid black;
+}
+
+#black_tile
+{
+    width:7.375em;
+    height:7.375em;
+    border:0.1em solid black;
+    background-color: black;
+}
