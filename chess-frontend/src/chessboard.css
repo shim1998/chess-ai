@@ -16,13 +16,27 @@
 {
     width:7.375em;
     height:7.375em;
-    border:0.1em solid black;
+    border:0.1em solid grey;
 }
 
 #black_tile
 {
     width:7.375em;
     height:7.375em;
-    border:0.1em solid black;
-    background-color: black;
+    border:0.1em solid grey;
+    background-color: grey;
+}
+
+#Piece_Container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Piece
+{
+    height: 75%;
 }
