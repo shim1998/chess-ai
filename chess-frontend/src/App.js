@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Chessboard from "./chessboard.js";
+import ChessBoard from "./chessboard.js";
 import './App.css';
 
 
@@ -7,8 +7,7 @@ class Main extends Component{
   render(){
     return (
       <div id="ChessBoard">
-        <Chessboard>
-        </Chessboard>
+        <ChessBoard/>
       </div>
     )
   }
