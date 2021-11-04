@@ -45,10 +45,10 @@ function isBlack(i,j){
 
 function createtiles(){
   const squares = [];
-  for(var i=0;i<64;i++){
-    var Tile_Color=isBlack(Math.floor(i/8),i%8)?"white_tile":"black_tile";
+  for(let i=0;i<64;i++){
+    let Tile_Color=isBlack(Math.floor(i/8),i%8)?"white_tile":"black_tile";
     console.log(isValidPosition(Math.floor(i/8),i%8));
-    var if_chess_piece=isValidPosition(Math.floor(i/8),i%8);
+    let if_chess_piece=isValidPosition(Math.floor(i/8),i%8);
     squares.push(
       <div id={Tile_Color}>
           {if_chess_piece}
