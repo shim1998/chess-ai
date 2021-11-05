@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import './chessboard.css';
-import isvalidposition from "./chesspiece";
+import '../styles/chessboard.css';
+import isvalidposition from "../pieces/chesspiece";
 
 function isblack(i,j){
   return (i+j)%2===0;
