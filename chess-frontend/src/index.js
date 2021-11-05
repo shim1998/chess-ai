@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Game from './components/chessgame'
 import './styles/index.css';
-import ChessBoard from './components/chessboard';
+import './styles/reset.css'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChessBoard />
+    <Game />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
