@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import '../styles/chessboard.css';
-import isvalidposition from "../pieces/chesspiece";
+import initialise from './initialise';
 
 function isblack(i,j){
   return (i+j)%2===0;
@@ -8,13 +8,14 @@ function isblack(i,j){
 
 function createtiles(){
   const squares = [];
+  const piece_squares = initialise();
   for(let i=0;i<64;i++){
     let tile_color=isblack(Math.floor(i/8),i%8)?"white_tile":"black_tile";
-    console.log(isvalidposition(Math.floor(i/8),i%8));
-    let if_chess_piece=isvalidposition(Math.floor(i/8),i%8);
     squares.push(
       <div id={tile_color}>
-          {if_chess_piece}
+          <div id="Piece_Container">
+            <img src={(piece_squares[i]?piece_squares[i].image:null)} id="Piece"/>
+          </div>
       </div>
     );
   }
